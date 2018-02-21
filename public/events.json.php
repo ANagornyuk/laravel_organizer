@@ -7,7 +7,7 @@
 			"url": "http://www.example.com/",
 			"class": "event-warning",
 			"start": "1362938400000",
-			"end":   "1363197686300"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "256",
@@ -15,7 +15,7 @@
 			"url": "http://www.example.com/",
 			"class": "event-warning",
 			"start": "1363155300000",
-			"end":   "1363227600000"
+			"end":   "1518666400000"
 		},
 		{
 			"id": "276",
@@ -23,7 +23,7 @@
 			"url": "http://www.example.com/",
 			"class": "event-success",
 			"start": "1363245600000",
-			"end":   "1363252200000"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "294",
@@ -31,7 +31,7 @@
 			"url": "http://www.example.com/",
 			"class": "event-info",
 			"start": "1363111200000",
-			"end":   "1363284086400"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "297",
@@ -39,7 +39,7 @@
 			"url": "http://www.example.com/",
 			"class": "event-success",
 			"start": "1363234500000",
-			"end":   "1363284062400"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "54",
@@ -47,7 +47,7 @@
 			"url": "http://www.example.com/",
 			"class": "",
 			"start": "1363712400000",
-			"end":   "1363716086400"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "532",
@@ -55,7 +55,7 @@
 			"url": "http://www.example.com/",
 			"class": "event-inverse",
 			"start": "1364407200000",
-			"end":   "1364493686400"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "548",
@@ -63,15 +63,15 @@
 			"url": "http://www.example.com/",
 			"class": "event-special",
 			"start": "1363197600000",
-			"end":   "1363629686400"
+			"end":   "1518566400000"
 		},
 		{
 			"id": "295",
 			"title": "Event 3",
 			"url": "http://www.example.com/",
 			"class": "event-important",
-			"start": "1364320800000",
-			"end":   "1364407286400"
+			"start": "1518739200000",
+			"end":   "1518566400000"
 		}
 	]
 }

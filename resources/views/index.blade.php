@@ -70,10 +70,15 @@
 			<div class="top-right links">
 				@auth
 					<a href="{{ url('/home') }}">Home</a>
-					@else
-						<a href="{{ route('login') }}">Login</a>
-						<a href="{{ route('register') }}">Register</a>
-						@endauth
+				@else
+					<a href="{{ route('login') }}">Login</a>
+					<a href="{{ route('register') }}">Register</a>
+				@endauth
+			</div>
+			<div class="top-left links">
+				@auth
+					<a href="{{ url('/event') }}">Create new event</a>
+				@endauth
 			</div>
 		@endif
 	</div>
