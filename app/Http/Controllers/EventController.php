@@ -39,8 +39,8 @@ class EventController extends Controller
         $event -> title = request('title');
         $event -> url = request('url');
         $event -> ev_class = request('ev_class');
-        $event -> start = request('start');
-        $event -> end = request('end');
+        $event -> start = date_format(date_create_from_format('Y-m-d?H:i', request('start')), 'U' )*1000;
+        $event -> end = date_format(date_create_from_format('Y-m-d?H:i', request('end')), 'U' )*1000;
 
         $event ->save();
         return redirect('/');
