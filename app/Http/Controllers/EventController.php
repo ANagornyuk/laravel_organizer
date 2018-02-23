@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -41,7 +42,7 @@ class EventController extends Controller
         $event -> ev_class = request('ev_class');
         $event -> start = date_format(date_create_from_format('Y-m-d?H:i', request('start')), 'U' )*1000;
         $event -> end = date_format(date_create_from_format('Y-m-d?H:i', request('end')), 'U' )*1000;
-
+        $event -> user_id = Auth::id();
         $event ->save();
         return redirect('/');
     }
