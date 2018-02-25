@@ -6,7 +6,7 @@ use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Storage;
+use Illuminate\Support\Facades\Storage;
 
 class EventController extends Controller
 {
@@ -75,7 +75,7 @@ class EventController extends Controller
             );
 
         }
-        Storage::disk('local')->put('events.json.php', json_encode(array('success' => 1, 'result' => $out)));
+        Storage::disk('pbl')->put('events.json.php', json_encode(array('success' => 1, 'result' => $out)));
 
 
         return view('home');
