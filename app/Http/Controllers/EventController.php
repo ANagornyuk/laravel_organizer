@@ -6,6 +6,7 @@ use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Storage;
 
 class EventController extends Controller
 {
@@ -57,10 +58,11 @@ class EventController extends Controller
      */
     public function show()
     {
-        /*
+
         $user_id = Auth::id();
-        $ev = DB::table('events')->find($user_id);
+        $ev = DB::table('events')->where('user_id',$user_id)->get();
         $out = array();
+
         foreach ($ev as $eve)
         {
             $out[] = array(
@@ -74,7 +76,8 @@ class EventController extends Controller
 
         }
         Storage::disk('local')->put('events.json.php', json_encode(array('success' => 1, 'result' => $out)));
-        */
+
+
         return view('home');
 
     }
