@@ -19,7 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/event', 'EventController@index');
+Route::get('/event', 'EventController@create');
 
 Route::post('/event', 'EventController@store');
 
+Route::get('/home2', 'EventController@show');

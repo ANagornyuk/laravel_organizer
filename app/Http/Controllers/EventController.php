@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class EventController extends Controller
 {
@@ -15,7 +16,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('events.event');//
+        //
     }
 
     /**
@@ -25,6 +26,7 @@ class EventController extends Controller
      */
     public function create()
     {
+        return view('events.event');
         //
     }
 
@@ -53,9 +55,28 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        /*
+        $user_id = Auth::id();
+        $ev = DB::table('events')->find($user_id);
+        $out = array();
+        foreach ($ev as $eve)
+        {
+            $out[] = array(
+                'id' => $eve->id,
+                'title' => $eve->title,
+                'url' => $eve->url,
+                'class' => $eve->ev_class,
+                'start' => $eve->start,
+                'end' => $eve->end,
+            );
+
+        }
+        Storage::disk('local')->put('events.json.php', json_encode(array('success' => 1, 'result' => $out)));
+        */
+        return view('home');
+
     }
 
     /**

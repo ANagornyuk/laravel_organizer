@@ -219,6 +219,7 @@
 	<script type="text/javascript" src="{{asset('js/calendar.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
 
+
 	<!--
 	<script type="text/javascript">
 		var disqus_shortname = 'bootstrapcalendar'; // required: replace example with your forum shortname
