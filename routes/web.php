@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+
+
+//Route::get('/', function () {
+//    return view('layouts.app');
+//});
+
+Route::get('/index', function () {
     return view('index');
 });
 
 Auth::routes();
+
+Route::get('/', 'Auth\LoginController@showLoginForm');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

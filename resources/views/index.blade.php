@@ -41,6 +41,15 @@
 			text-transform: uppercase;
 		}
 	</style>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: "5dc179a1-022b-4763-9d27-1bf7915ae319",
+            });
+        });
+	</script>
 </head>
 <body>
 <div class="container">
@@ -113,6 +122,7 @@
 					<option value="2">First day of week is Sunday</option>
 					<option value="1">First day of week is Monday</option>
 				</select>
+				<!--
 				<select id="language" class="span12">
 					<option value="">Select Language (default: en-US)</option>
 					<option value="bg-BG">Bulgarian</option>
@@ -139,9 +149,12 @@
 					<option value="ko-KR">한국어</option>
 					<option value="th-TH">Thai (Thailand)</option>
 				</select>
+				-->
+				<!--
 				<label class="checkbox">
 					<input type="checkbox" value="#events-modal" id="events-in-modal"> Open events in modal window
 				</label>
+				-->
 				<label class="checkbox">
 					<input type="checkbox" id="format-12-hours"> 12 Hour format
 				</label>
@@ -192,6 +205,7 @@
 	<script type="text/javascript" src="{{asset('components/underscore/underscore-min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('components/bootstrap2/js/bootstrap.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('components/jstimezonedetect/jstz.min.js')}}"></script>
+	<!--
 	<script type="text/javascript" src="../../public/js/language/bg-BG.js"></script>
 	<script type="text/javascript" src="../../public/js/language/nl-NL.js"></script>
 	<script type="text/javascript" src="../../public/js/language/fr-FR.js"></script>
@@ -216,6 +230,7 @@
 	<script type="text/javascript" src="../../public/js/language/zh-TW.js"></script>
 	<script type="text/javascript" src="../../public/js/language/id-ID.js"></script>
 	<script type="text/javascript" src="../../public/js/language/th-TH.js"></script>
+	-->
 	<script type="text/javascript" src="{{asset('js/calendar.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
 

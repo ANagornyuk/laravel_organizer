@@ -47,7 +47,7 @@ class EventController extends Controller
         $event -> end = date_format(date_create_from_format('Y-m-d?H:i', request('end')), 'U' )*1000;
         $event -> user_id = Auth::id();
         $event ->save();
-        return redirect('/');
+        return redirect('/home2');
     }
 
     /**
@@ -78,7 +78,7 @@ class EventController extends Controller
         Storage::disk('pbl')->put('events.json.php', json_encode(array('success' => 1, 'result' => $out)));
 
 
-        return view('home');
+        return view('index');
 
     }
 
